@@ -27,7 +27,7 @@
       </ul>
     </nav>
     <div class="user-block">
-      <button class="search" id="search"></button>
+      <a class="search" href="#">Search</a>
       <a class="login" href="#">Вход</a>
       <a class="cart-with-items" href="#">2 товара</a>
       <span>С 10 до 20, ежедневно</span>
@@ -58,17 +58,15 @@
           <option>по жирности</option>
         </select>
       </label>
-      <label for="price">Цена: 100 руб. – 500 руб.
-        <!--Гугл говорит, что такой слайдер не получится сделать с помощью цсс, нужен джс?-->
-        <input type="range" name="price" id="price" min="0" max="1000">
-      </label>
-      <!--Не уверена в лейблах для радиобаттонов и чекбоксов-->
-      <label for="fat-content">Жирность:
-        <input type="radio" name="fat-content" id="fat-content">0%
-        <input type="radio" name="fat-content" checked>до 10%
-        <input type="radio" name="fat-content">до 30%
-        <input type="radio" name="fat-content">выше 30%
-      </label>
+      <div class="range">
+        <div class="range range-left"></div>
+        <div class="range range-right"></div>
+      </div>
+      <label>Жирность:<input type="radio" name="fat-content" id="fat-content">0%</label>
+      <label><input type="radio" name="fat-content" checked>до 10%</label>
+      <label><input type="radio" name="fat-content">до 30%</label>
+      <label><input type="radio" name="fat-content">выше 30%</label>
+
       <label for="addons">Наполнители:
         <input type="checkbox" id="addons" checked>шоколадные
         <input type="checkbox" checked>сахарные присыпки

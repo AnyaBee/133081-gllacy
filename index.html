@@ -27,7 +27,7 @@
         </ul>
       </nav>
       <div class="user-block">
-        <button class="search" id="search"></button>
+        <a class="search" href="#">Search</a>
         <a class="login" href="#">Вход</a>
         <a class="cart" href="#">Пусто</a>
         <span>С 10 до 20, ежедневно</span>
@@ -59,9 +59,9 @@
           </div>
           <div class="nav">
             <ul>
-              <li><a href="#" class="thumbnail"></a></li>
-              <li><a href="#" class="thumbnail"></a></li>
-              <li><a href="#" class="thumbnail active"></a></li>
+              <li><a href="#" class="thumbnail">1</a></li>
+              <li><a href="#" class="thumbnail">2</a></li>
+              <li><a href="#" class="thumbnail active">3</a></li>
             </ul>
           </div>
         </div>
@@ -186,7 +186,7 @@
     <h5>Мы обязательно вам ответим!</h5>
     <form action="https://echo.htmlacademy.ru" method="get">
       <label><input type="text" name="name" value="Как вас зовут?" required></label>
-      <label><input type="email" name="email-field" value="Ваша почта для ответа?" required></label>
+      <label><input type="email" name="email" value="Ваша почта для ответа?" required></label>
       <label><textarea name="user-text" value="Напишите что-нибудь..."></textarea></label>
       <input type="submit" value="Отправить">
     </form>
@@ -196,24 +196,47 @@
   <div class="login-block">
     <form action="https://echo.htmlacademy.ru" method="get">
       <label>
-        <!--ВОПРОС! Может ли быть одинаковое имя name и от чего зависит?-->
         <input type="email" name="email" value="Электронная почта" required>
       </label>
       <label>
-        <!--Есть варианты кроме джса сделать так, чтобы в форме был input type="password", но при этом дефолтный текст (который там по умолчанию) все-таки показывался как текст, а не был замаскирован?-->
-
-        <input type="text" name="password" value="Пароль" required>
+        <input type="text" name="password" placeholder="Пароль" required>
       </label>
       <input type="submit" value="Войти">
       <a href="#">Забыли пароль?</a>
       <a href="#">Новая регистрация</a>
     </form>
+  </div>
     <!--Search block-->
 
     <!--Хм, как сделать поиск без кнопки, а просто по ивенту на кнопку enter?-->
     <form action="https://echo.htmlacademy.ru" method="get">
-      <input type="search" name="search" value="Что ищем?">
+      <input type="search" name="search" placeholder="Что ищем?">
     </form>
+  <!--Cart Block -->
+  
+  <div class="cart-mini-view">
+    <table>
+      <tr>
+        <td><svg width="" height=""></td>
+        <td><img src="img/p1" width="" height="" alt="ice-cream-mini-view"</td>
+        <td>Пломбир с апельсиновым джемом</td>
+        <td>1,5 кг х 200 руб.</td>
+        <td>300 руб.</td>
+      </tr>
+      <tr>
+        <td><svg width="" height=""></td>
+        <td><img src="img/p2" width="" height="" alt="ice-cream-mini-view"</td>
+        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+        <td>1,5 кг х 300 руб.</td>
+        <td>450 руб.</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td colspan="4">Итого:750 руб.</td>
+        </tr>
+      </tfoot>
+    </table>
+    <a href="#">Оформить заказ</a>
   </div>
   </body>
 </html>
