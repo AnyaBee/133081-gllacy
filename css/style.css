@@ -1,6 +1,5 @@
 body {
   min-width: 900px;
-
   font-size: 16px;
   font-family: "Roboto", Trebuchet MS, sans-serif;
   font-weight: normal;
@@ -16,6 +15,7 @@ body {
   padding-right: 2.3%;
   box-sizing: border-box;
 }
+
 h1 {
   font-size: 60px;
   font-family: "Roboto", Trebuchet MS, sans-serif;
@@ -23,6 +23,7 @@ h1 {
   line-height: 60px;
   color: #ffffff;
 }
+
 h2 {
   font-size: 35px;
   font-family: "Roboto", Trebuchet MS, sans-serif;
@@ -30,68 +31,72 @@ h2 {
   line-height: 41px;
   color: #ffffff;
 }
+
 .header-home {
   display: flex;
   flex-wrap: wrap;
   padding-top: 10px;
-  position:relative;
+  position: relative;
   z-index: 1;
 }
 
 .logo {
-  width:154px;
+  width: 154px;
   margin-right: 5px;
 }
+
 .main-nav {
   width: 50%;
   margin-right:auto;
 }
 
 .user-block {
-  width:30%;
+  width: 30%;
   padding-top: 18px;
 }
 
 .nav {
   font-size: 0;
-  padding-left:20px;
+  padding-left: 20px;
 }
 
 .nav li.main-navigation {
   list-style: none;
   display: inline-block;
   vertical-align: top;
-  font-size:16px;
+  font-size: 16px;
   padding-right: 27px;
-  padding-top:18px;
+  padding-top: 18px;
 }
 li.main-navigation a{
   color: #ffffff;
 }
 .navigation-level-two {
-  display:none;
+  display: none;
 }
 .navigation-level-two li {
   list-style: none;
 }
+
 a.search {
-  margin-right:10px;
-  padding-right:15px;
-  padding-left:15px;
+  margin-right: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   text-decoration: none;
   color: #ffffff;
 }
 
 a.login{
-  padding-left:10px;
-  margin-right:10px;
-  padding-right:15px;
+  padding-left: 10px;
+  margin-right: 10px;
+  padding-right: 15px;
   text-decoration: none;
   font-family: "Myriad Pro", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
 }
+
 a.cart {
   padding-left: 15px;
   padding-right: 33px;
@@ -100,8 +105,8 @@ a.cart {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-
 }
+
 a.phone {
   color: #ffffff;
   font-size: 22px;
@@ -109,33 +114,35 @@ a.phone {
   font-weight: bold;
   pointer-events: none;
   text-decoration: none;
-  margin-right:0;
-
+  margin-right: 0;
 }
+
 .contact-details {
-  position:absolute;
-  top:70px;
-  right:0%;
+  position: absolute;
+  top: 70px;
+  right: 0;
 }
 
 .contact-details span {
   color: #ffffff;
   font-size: 14px;
-  font-weight:bold;
-  line-height:16px;
+  font-weight: bold;
+  line-height: 16px;
   text-align: right;
 }
 
 /*Slider*/
 .banner-slider {
-  position:relative;
+  position: relative;
   z-index: -1;
 }
+
 .banner {
   width: 100%;
   overflow: hidden;
   text-align: center;
 }
+
 .banner img {
   display: block;
   width: 100%;
@@ -145,6 +152,7 @@ a.phone {
 .slideshow {
   margin-top:-80px;
 }
+
 .banner-2,
 .banner-3 {
   display:none;
@@ -155,56 +163,68 @@ a.phone {
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.promo-1 {
+
+.promo-jam {
   flex-basis: 48.8%;
   background: url("../img/raspberry-bg.jpg") no-repeat;
   border-radius: 15px;
 }
-.promo-2 {
+
+.promo-chocolate {
   flex-basis: 48.8%;
   background: url("../img/chocolate-bg.jpg") no-repeat;
   border-radius: 15px;
 }
+
 .promo-block:nth-of-type(even) {
-  margin-right:0;
+  margin-right: 0;
 }
+/*why did I have to do that?? something with normalise...*/
 figure {
-  margin:0 0;
+  margin: 0 0;
 }
+
 .favourites {
   display: flex;
   box-sizing: border-box;
   margin-bottom: 40px;
   justify-content: space-between;
 }
+
 .favourite-item {
   width: 22.2%;
   margin-right: 2.3%;
 }
+
 .favourite-item:nth-of-type(4n) {
-  margin-right:0;
+  margin-right: 0;
 }
+
 .favourite img {
   border-radius: 50%;
   display: block;
   width: 100%;
   height: auto;
 }
+
 .about-us {
-  background: url("../img/bg-about-us.jpg") no-repeat;
+  background: url("../img/bg-about-us.jpg");
   border-radius: 15px;
   margin-bottom: 40px;
 }
+
 .blog-newsletter {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
+
 .blog-new {
   width: 48.8%;
   background: url("../img/strawberry-bg.jpg") no-repeat;
   border-radius: 15px;
 }
+
 .newsletter {
   width: 48.8%;
   background: #ffffff url("../img/newsletter-pattern.png");
@@ -215,11 +235,13 @@ figure {
 .map-holder img{
   display: block;
 }
+
 .location {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
+
 .address {
   position: absolute;
   top: 50px;
@@ -228,6 +250,7 @@ figure {
   background-color: #ffffff;
   border-radius: 15px;
 }
+
 .pin img {
   width: 80px;
   display: block;
@@ -236,18 +259,122 @@ figure {
   top: 140px;
   left: 240px;
 }
+
 .main-footer {
   padding-top: 18px;
   padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
 }
+
 .social {
   width:22.2%;
 }
+
 .additional-info {
-width: 44.4%
+  width: 44.4%;
 }
+
 .footer-copyright {
   width: 22.2%;
+}
+
+/*Catalog*/
+.breadcrumbs {
+  max-width: 44.4%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0; /*так и не поняла, почему смещается вправо и появляется 40px паддинга?!*/
+}
+
+.breadcrumbs-nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+.breadcrumbs-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Roboto", Trebuchet MS, sans-serif;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.filters-row-1 {
+  margin-bottom: 15px;
+}
+
+.sort-by,
+.range,
+.wrapper-fat {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sort-by {
+  width: 194px;
+  box-sizing: border-box;
+  margin-right: 17px;
+}
+
+.range {
+  width: 218px;
+  box-sizing: border-box;
+  margin-right: 17px;
+}
+/*опять какие-то дефолтные стили :( поэтому обнулила */
+.range p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+/*как сделать так, чтобы блок с фильтром жирность не падал на новую строчку? Он падает, когда ширина меньше 900 px, но я не знаю как остановить!*/
+.wrapper-fat {
+  width: 416px;
+  box-sizing:border-box;
+}
+
+.filters-row-2 {
+  margin-bottom: 40px;
+}
+
+.addons,
+.submit {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.catalog-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  width: 22.2%;
+  margin-right: 2.3%;
+}
+
+.catalog-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+figure.item img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+article.catalog-item:last-of-type {
+  margin-bottom: 75px;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination-button {
+  color: #ffffff;
 }
