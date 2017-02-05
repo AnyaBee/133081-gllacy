@@ -11,8 +11,8 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 2.3%;
-  padding-right: 2.3%;
+  /*padding-left: 2.3%;
+  padding-right: 2.3%;*/
   box-sizing: border-box;
 }
 
@@ -38,11 +38,17 @@ h2 {
   padding-top: 10px;
   position: relative;
   z-index: 1;
+  margin-right: 2.3%;
+  margin-left: 2.3%;
 }
 
 .logo {
   width: 154px;
   margin-right: 5px;
+}
+.main-content {
+  margin-right: 2.3%;
+  margin-left: 2.3%;
 }
 
 .main-nav {
@@ -160,25 +166,30 @@ a.phone {
 
 .promo-block {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 40px;
+  justify-content: space-between;
 }
 
 .promo-jam {
-  flex-basis: 48.8%;
+  width: 48.8%;
+  box-sizing: border-box;
   background: url("../img/raspberry-bg.jpg") no-repeat;
   border-radius: 15px;
+  margin-right: 2.2%;
 }
 
 .promo-chocolate {
   flex-basis: 48.8%;
+  box-sizing: border-box;
   background: url("../img/chocolate-bg.jpg") no-repeat;
   border-radius: 15px;
+  margin-right: 0;
 }
 
 .promo-block:nth-of-type(even) {
   margin-right: 0;
 }
+
 /*why did I have to do that?? something with normalise...*/
 figure {
   margin: 0 0;
@@ -192,8 +203,8 @@ figure {
 }
 
 .favourite-item {
-  width: 22.2%;
-  margin-right: 2.3%;
+  width: 23.3%;
+  margin-right: 2.2%;
 }
 
 .favourite-item:nth-of-type(4n) {
@@ -211,6 +222,17 @@ figure {
   background: url("../img/bg-about-us.jpg");
   border-radius: 15px;
   margin-bottom: 40px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.about p {
+  width: 44.4%;
+  box-sizing: border-box;
 }
 
 .blog-newsletter {
@@ -261,6 +283,8 @@ figure {
 }
 
 .main-footer {
+  margin-right: 2.3%;
+  margin-left: 2.3%;
   padding-top: 18px;
   padding-bottom: 30px;
   display: flex;
@@ -352,8 +376,8 @@ figure {
 }
 
 .catalog-item {
-  width: 22.2%;
-  margin-right: 2.3%;
+  width: 23.3%;
+  margin-right: 2.2%;
 }
 
 .catalog-item:nth-of-type(4n) {
