@@ -38,8 +38,8 @@ h2 {
   padding-top: 10px;
   position: relative;
   z-index: 1;
-  margin-right: 2.3%;
-  margin-left: 2.3%;
+  padding-right: 2.3%;
+  padding-left: 2.3%;
 }
 
 .logo {
@@ -47,8 +47,8 @@ h2 {
   margin-right: 5px;
 }
 .main-content {
-  margin-right: 2.3%;
-  margin-left: 2.3%;
+  padding-right: 2.3%;
+  padding-left: 2.3%;
 }
 
 .main-nav {
@@ -283,10 +283,7 @@ figure {
 }
 
 .main-footer {
-  margin-right: 2.3%;
-  margin-left: 2.3%;
-  padding-top: 18px;
-  padding-bottom: 30px;
+  padding: 18px 2.3% 18px 2.3%;
   display: flex;
   justify-content: space-between;
 }
