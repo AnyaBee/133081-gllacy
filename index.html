@@ -15,7 +15,7 @@
     <input type="radio" id="btn-3" name="toggle">
       <div class="wrapper">
         <div class="content-wrapper">
-          <header class="header-home">
+          <header class="header-home clearfix">
             <div class="logo">
                 <img src="img/logo.png" alt="logo" width="154" height="64">
             </div>
@@ -45,6 +45,8 @@
               <a class="phone" href="tel:88124502525">8 812 450-25-25</a>
             </div>
           </header>
+        </div>
+        <div class="content-wrapper">
         <main class="main-content">
           <!--Slider -->
 
@@ -155,8 +157,9 @@
             <section class="newsletter-wrapper">
               <div class="newsletter">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-              <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="get">
-                <label><input type="email" name="email" placeholder="Электронная почта" required>
+              <form class="newsletter-form clearfix" action="https://echo.htmlacademy.ru" method="get">
+                <label class="email-form">
+                  <input type="email" name="email" placeholder="Электронная почта" required>
                   <span>Как вас зовут?</span>
                 </label>
                 <button class="button" type="submit">Отправить</button>
@@ -164,6 +167,7 @@
             </div>
             </section>
           </div>
+
             <!-- Map -->
             <section class="location">
               <div class="map-holder">
@@ -182,8 +186,11 @@
               </div>
             </section>
         </main>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.204275436278!2d30.318804698939168!3d59.93874385150623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x1c275a881519dab7!2z0JjQndCi0JXQoNCQ0JrQotCY0JLQndCr0JUg0J7QkdCj0KfQkNCu0KnQmNCVINCi0JXQpdCd0J7Qm9Ce0JPQmNCY!5e0!3m2!1sen!2suk!4v1486681464785" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <footer class="main-footer">
+        </div>
+          <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.204275436278!2d30.318804698939168!3d59.93874385150623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x1c275a881519dab7!2z0JjQndCi0JXQoNCQ0JrQotCY0JLQndCr0JUg0J7QkdCj0KfQkNCu0KnQmNCVINCi0JXQpdCd0J7Qm9Ce0JPQmNCY!5e0!3m2!1sen!2suk!4v1486681464785" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          -->
+        <div class="content-wrapper">
+        <footer class="main-footer">
         <section class="social">
           <a class="social-btn social-btn-twitter" href="#"></a>
           <a class="social-btn social-btn-inst" href="#"></a>
@@ -201,6 +208,7 @@
           <p>Сделано в <a class="copyright" href="https://htmlacademy.ru">HTML Academy &copy; </a>2017</p>
         </section>
       </footer>
+        </div>
         <!--Popup - appears on click on "Форма обратной связи" button on map-->
 
       <div class="popup">
@@ -258,7 +266,6 @@
           </tfoot>
         </table>
         <a href="#">Оформить заказ</a>
-      </div>
       </div>
       </div>
   </body>

@@ -69,6 +69,11 @@ h2 {
   padding-right: 2.3%;
   padding-left: 2.3%;
 }
+.clearfix::after{
+  display:block;
+  clear:both;
+  content:'';
+}
 
 .logo {
   padding-top: 10px;
@@ -637,7 +642,6 @@ figure {
   padding: 30px 20px;
   height: 100%;
   box-sizing: border-box;
-  margin-bottom: 35px;
 }
 
 .newsletter p {
@@ -649,10 +653,15 @@ figure {
   margin-bottom: 35px;
 
 }
+.newsletter-form label {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
 .newsletter-form input {
   margin: 0;
-  float: left;
-  width: 60%;
+  display: block;
+  width: 100%;
   margin-right: 10px;
   padding: 8px 14px;
   border: 1px solid #d3d3d2;
@@ -679,12 +688,13 @@ figure {
     width: 180px;
   }
 }
+
 .newsletter-form input:hover {
-  border: 2px solid #c7c6c5;
+  border: 1px solid #c7c6c5;
 }
 
 .newsletter-form input:focus{
-  border: 2px solid #8fbdec;
+  border: 1px solid #8fbdec;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -695,6 +705,18 @@ figure {
 .newsletter-form input[type="email"] + span {
   display: none;
 }
+.newsletter-form input:focus:-moz-placeholder {
+  font-weight: normal;
+}
+.newsletter-form input:focus::-webkit-input-placeholder {
+  font-weight: normal;
+}
+.newsletter-form input:focus::-moz-placeholder {
+  font-weight: normal;
+}
+.newsletter-form input:focus:-ms-input-placeholder {
+  font-weight: normal;
+}
 
 .newsletter-form input[type="email"]:focus + span {
   display: block;
@@ -702,10 +724,11 @@ figure {
   font-size: 11px;
   line-height: 13px;
   color: #5b9ddf;
-  position: relative;
-  top: -25px;
-  left: -300px;
+  position: absolute;
+  top: -20px;
+  left:15px;
 }
+
 .map-holder img {
   display: block;
 }
@@ -743,6 +766,15 @@ figure {
 .social {
   width:22.2%;
 }
+.social-btn {
+  width: 32px;
+  height: 32px;
+}
+
+.social-btn-twitter {
+  background-image: url("../img/social-twitter.png");
+}
+
 
 .additional-info {
   width: 44.4%;
