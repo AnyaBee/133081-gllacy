@@ -9,6 +9,7 @@
   </head>
   <body>
   <!-- Header -->
+
     <input type="radio" id="btn-1" name="toggle" checked>
     <input type="radio" id="btn-2" name="toggle">
     <input type="radio" id="btn-3" name="toggle">
@@ -75,18 +76,15 @@
             </div>
           </div>
 
-
-
-
           <section class="promo-block">
             <div class="promo-jam">
-              <h3>Малинка даром!</h3>
+              <h2>Малинка даром!</h2>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
               </p>
               <a class="button" href="#">Хочу варенье!</a>
             </div>
             <div class="promo-chocolate">
-              <h3>Шоколадки даром!</h3>
+              <h2>Шоколадки даром!</h2>
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
               </p>
               <a class="button" href="#">Хочу шоколадки!</a>
@@ -100,7 +98,7 @@
                 <figure class="favourite">
                   <img src="img/favourite-1.jpg" width="267" height="267" alt="ice-cream">
                   <span class="label"></span>
-                  <span class="price">310Р/кг</span>
+                  <span class="price">310<span class="ruble">&#99;</span>/кг</span>
                   <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
                 </figure>
               </a>
@@ -110,7 +108,7 @@
                 <figure class="favourite">
                   <img src="img/favourite-2.jpg" width="267" height="267" alt="ice-cream">
                   <span class="label"></span>
-                  <span class="price">380Р/кг</span>
+                  <span class="price">380<span class="ruble">&#99;</span>/кг</span>
                   <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
                 </figure>
               </a>
@@ -120,7 +118,7 @@
                 <figure class="favourite">
                   <img src="img/favourite-3.jpg" width="267" height="267" alt="ice-cream">
                   <span class="label"></span>
-                  <span class="price">355Р/кг</span>
+                  <span class="price">355<span class="ruble">&#99;</span>/кг</span>
                   <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
                 </figure>
               </a>
@@ -130,40 +128,43 @@
                 <figure class="favourite">
                   <img src="img/favourite-4.jpg" width="267" height="267" alt="ice-cream">
                   <span class="label"></span>
-                  <span class="price">415Р/кг</span>
+                  <span class="price">415<span class="ruble">&#99;</span>/кг</span>
                   <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
                 </figure>
               </a>
             </article>
           </section>
           <section class="about-us">
-            <h4>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h4>
+            <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
             <div class="about">
-              <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+              <p class="special about-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
               </p>
-              <p>
+              <p class="special about-2">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+              </p>
+              <p class="special about-3">
                 Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
               </p>
-              <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-              </p>
-              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+              <p class="special about-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </div>
           </section>
           <div class="blog-newsletter">
             <section class="blog-new">
               <span>Новое в нашем блоге</span>
-              <span class="blog-entry-title">10  способов сервировки<br> фруктовых щербетов к<br> столу</span>
+              <a class="blog-entry-title" href="#">10  способов сервировки<br> фруктовых щербетов к<br> столу</a>
             </section>
-            <section class="newsletter">
+            <section class="newsletter-wrapper">
+              <div class="newsletter">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-              <form action="https://echo.htmlacademy.ru" method="get">
-                <label><input type="email" name="email" value="Электронная почта" required></label>
-                <label><input type="submit" value="Отправить"></label>
+              <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="get">
+                <label><input type="email" name="email" placeholder="Электронная почта" required>
+                  <span>Как вас зовут?</span>
+                </label>
+                <button class="button" type="submit">Отправить</button>
               </form>
+            </div>
             </section>
           </div>
             <!-- Map -->
-
             <section class="location">
               <div class="map-holder">
                 <img src="img/map-placeholder.jpg" width="1200" height="430" alt="Main office location"> <!--может сделать бекграундом или тут настоящая карта будет?-->
@@ -181,6 +182,7 @@
               </div>
             </section>
         </main>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.204275436278!2d30.318804698939168!3d59.93874385150623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x1c275a881519dab7!2z0JjQndCi0JXQoNCQ0JrQotCY0JLQndCr0JUg0J7QkdCj0KfQkNCu0KnQmNCVINCi0JXQpdCd0J7Qm9Ce0JPQmNCY!5e0!3m2!1sen!2suk!4v1486681464785" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       <footer class="main-footer">
         <section class="social">
           <a class="social-btn social-btn-twitter" href="#"></a>
