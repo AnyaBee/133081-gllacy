@@ -9,7 +9,7 @@ body {
   font-family: "Roboto", Trebuchet MS, sans-serif;
   font-weight: normal;
   line-height: 1.2;
-  color: #323232;
+  color: #ffffff;
   background: #849d8f;
 }
 body > input[type="radio"] {
@@ -62,6 +62,7 @@ h2 {
   line-height: 41px;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .header-home {
@@ -586,7 +587,7 @@ figure {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 66px;
+  top: 216px;
 }
 
 .ruble {
@@ -595,11 +596,12 @@ figure {
 }
 .favourite figcaption {
   margin: 0;
+  text-align: center;
+  text-decoration: underline;
   color: #ffffff;
   font-size: 16px;
   line-height: 22px;
   font-family: "Roboto Medium", Arial, sans-serif;
-
 }
 .about-us {
   background: url("../img/bg-about-us.jpg");
@@ -722,6 +724,7 @@ figure {
 
 .newsletter p {
   margin: 0;
+  color: #323232;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -934,15 +937,47 @@ a.copyright {
   max-width: 44.4%;
   display: flex;
   justify-content: flex-start;
-  padding-left: 0; /*так и не поняла, почему смещается вправо и появляется 40px паддинга?!*/
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 20px;
 }
 
 .breadcrumbs-nav li {
-  display: inline-block;
-  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
 }
-
-.breadcrumbs-nav li a {
+.breadcrumbs-nav li:first-child {
+  margin-left: 0;
+}
+.breadcrumbs li:before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #a9bbb1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.breadcrumbs li::after {
+  content: ">>";
+  position: absolute;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: "Roboto", "Arial", sans-serif;
+  top: 1px;
+  right: -15px;
+}
+.breadcrumbs li:last-child::after{
+  display: none;
+}
+.breadcrumbs a {
+  display: inline-block;
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
@@ -950,38 +985,145 @@ a.copyright {
   font-weight: normal;
   line-height: 16px;
 }
-
-.filters-row-1 {
-  margin-bottom: 15px;
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+  text-decoration: underline;
 }
-
+.breadcrumbs li:hover::before,
+.breadcrumbs li:active::before{
+  border: none;
+}
+.breadcrumbs li:last-of-type::before {
+  border: none;
+}
+.filters {
+  margin-bottom: 33px;
+}
+.filters-row-1 {
+  margin-bottom: 15px; /* Почему этот марджин не сработал я не понимаю!!!*/
+}
 .sort-by,
 .range,
 .wrapper-fat {
   display: inline-block;
   vertical-align: top;
+  margin-bottom: 15px;
 }
 
 .sort-by {
   width: 194px;
   box-sizing: border-box;
-  margin-right: 17px;
+  margin-right: 15px;
 }
-
+.sort-by label {
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: normal;
+}
+.fat-content-choice {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: normal;
+}
 .range {
   width: 218px;
-  box-sizing: border-box;
-  margin-right: 17px;
+  margin-right: 10px;
 }
-/*опять какие-то дефолтные стили :( поэтому обнулила */
+
 .range p {
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.range-controls {
+  height: 20px;
+  padding-top: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #aabcb2;
+  border-radius: 15px;
+  position: relative;
+}
+.range-controls .scale {
+  height: 4px;
+  background: #d1dad3;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 4px;
+  background: #f8f7f4;
+}
+.range-controls .toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f8f7f4;
+  cursor: pointer;
+}
+.range-controls .toggle-left {
+  top: 8px;
+  left: 10px;
+}
+.range-controls .toggle-right {
+  top: 8px;
+  left: 140px;
 }
 /*как сделать так, чтобы блок с фильтром жирность не падал на новую строчку? Он падает, когда ширина меньше 900 px, но я не знаю как остановить!*/
 .wrapper-fat {
   width: 416px;
   box-sizing:border-box;
+}
+
+.wrapper-fat > span {
+  display: block;
+  margin-bottom: 10px;
+}
+.fat-wrapper {
+  background-color: #aabcb2;
+  border-radius: 15px;
+}
+.fat-choice {
+  display: inline-block;
+  height: 20px;
+  padding-top: 8px;
+  padding-bottom:8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.fat-choice input[type="radio"] {
+  display: none;
+}
+.fat-choice input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor:pointer;
+}
+.fat-choice input[type="radio"]:checked + .radio-indicator::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: 4px;
+  left: 4px;
+}
+.percentage {
+  margin-left: 30px;
 }
 
 .filters-row-2 {
@@ -993,7 +1135,79 @@ a.copyright {
   display: inline-block;
   vertical-align: top;
 }
+.addons > span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.additional{
+  background-color: #aabcb2;
+  border-radius: 15px;
+}
+.addons-variety {
+  display: inline-block;
+  height: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 5px;
+  background-color: #aabcb2;
+  border-radius: 15px;
+  position: relative;
+}
+.addons-variety:last-of-type {
+  padding-right: 30px;
+}
+.addons-variety input[type="checkbox"] {
+  display: none;
+}
+.addons-variety input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor:pointer;
+}
+.addons-variety input[type="checkbox"]:checked + .checkbox-indicator {
+  content: "";
+  top: 8px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url("../img/checkbox.png");
+  border:none;
 
+}
+.add {
+  padding-left:23px;
+}
+
+.submit {
+  padding-top: 25px;
+  margin-left: 15px;
+  width: 140px;
+}
+.submit input[type="submit"] {
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #ffffff;
+  background-color: #a6b7ad;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  padding: 8px 30px 8px 30px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
 .catalog-container {
   display: flex;
   flex-wrap: wrap;
@@ -1004,8 +1218,12 @@ a.copyright {
 .catalog-item {
   width: 23.3%;
   margin-right: 2.2%;
+  position: relative;
 }
+.catalog-item > a{
+  display: block;
 
+}
 .catalog-item:nth-of-type(4n) {
   margin-right: 0;
 }
@@ -1015,10 +1233,38 @@ figure.item img{
   height: auto;
   border-radius: 50%;
 }
+.catalog-item figcaption {
+  margin: 0;
+  color: #ffffff;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+/*
+.catalog-item-button {
+  visibility: hidden;
+}
 
+.catalog-item-button {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+}
+
+.catalog-item:hover .catalog-item-button {
+  visibility: visible;
+}
+
+.catalog-item:hover {
+  background-color: #aebeb4;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
 article.catalog-item:last-of-type {
   margin-bottom: 75px;
 }
+*/
 
 .pagination-wrapper {
   display: flex;
