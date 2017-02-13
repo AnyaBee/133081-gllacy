@@ -15,6 +15,9 @@ body {
 body > input[type="radio"] {
   display: none;
 }
+.iframe-wrapper {
+  position: relative;
+}
 iframe {
   width: 100%;
   margin-bottom: 12px;
@@ -821,13 +824,47 @@ figure {
 
 .address {
   position: absolute;
-  top: 50px;
-  right: 0;
+  top: 65px;
+  right: 2.3%;
+  transform: translate(2.3%, 0);
   width: 303px;
+
   background-color: #ffffff;
   border-radius: 15px;
+  color: #323232;
 }
-
+.address-wrapper {
+  padding: 25px;
+}
+.address a {
+  display: block;
+}
+.address span {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.address strong {
+  display: block;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.address .phone {
+  color: #323232;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.address .hours {
+  display: block;
+  margin-bottom: 25px;
+}
 .pin img {
   width: 80px;
   display: block;
@@ -1213,6 +1250,7 @@ a.copyright {
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .catalog-item {
@@ -1221,6 +1259,10 @@ a.copyright {
   position: relative;
 }
 
+.catalog-item-links {
+  position: relative;
+  z-index: 11;
+}
 .catalog-item::before {
   content: "";
   position: absolute;
@@ -1301,7 +1343,6 @@ article.catalog-item:last-of-type {
   min-height: 28px;
   box-sizing: border-box;
   position: relative;
-  margin-right: 10px;
 
 }
 
@@ -1322,6 +1363,7 @@ article.catalog-item:last-of-type {
 .pagination-button:hover {
   background-color: #9db1a5;
   border-radius: 50%;
+  color: #ffffff;
 }
 .prev {
   background: url("../img/icon-prev.png") no-repeat;
