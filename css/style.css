@@ -1244,6 +1244,15 @@ a.copyright {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  cursor: pointer;
+}
+.submit input[type="submit"]:hover {
+  background-color: #fbfcfb;
+  color: #323232;
+}
+.submit input[type="submit"]:active {
+  background-color: #eaeaea;
+  color: #323232;
 }
 .catalog-container {
   display: flex;
