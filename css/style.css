@@ -120,9 +120,6 @@ h2 {
   padding-bottom: 10px;
 }
 
-.main-nav:hover ul {
-  display: block;
-}
 .nav > li {
   position: relative;
   list-style: none;
@@ -157,7 +154,13 @@ h2 {
 .navigation-level-two {
   display: none;
 }
-
+.nav li:hover {
+  padding-bottom: 8px;
+  margin-bottom: -8px;
+}
+.nav li:hover > .navigation-level-two {
+  display: block;
+}
 .main-navigation > a:hover .navigation-level-two {
   display: block;
 }
@@ -276,7 +279,6 @@ a.login:hover::before {
   background: url("../img/icon-login-hover.png") no-repeat;
 }
 a.cart-empty {
-  display: none;
   position: relative;
   padding: 8px 35px 8px 45px;
   text-decoration: none;
@@ -289,7 +291,6 @@ a.cart-empty {
 }
 
 a.cart-empty::before {
-  display:none;
   position: absolute;
   content: "";
   width: 21px;
@@ -299,6 +300,13 @@ a.cart-empty::before {
   background: url("../img/icon-cart.png") no-repeat;
 }
 
+a.cart-empty:hover {
+  color: #323232;
+  background-color: #f7f6f3;
+}
+a.cart-empty:hover::before {
+  background: url("../img/icon-cart-full.png") no-repeat;
+}
 a.cart-full {
   display: block;
   position: relative;
@@ -538,46 +546,6 @@ a.phone {
 /*why did I have to do that?? something with normalise...*/
 figure {
   margin: 0 0;
-}
-
-.favourites {
-  display: flex;
-  box-sizing: border-box;
-  margin-bottom: 40px;
-  justify-content: space-between;
-}
-
-.favourite-item {
-  width: 23.3%;
-  margin-right: 2.2%;
-  position: relative;
-}
-
-.favourite-item a {
-  text-decoration: none;
-  text-align: center;
-}
-.favourite-item:nth-of-type(4n) {
-  margin-right: 0;
-}
-
-.favourite img {
-  border-radius: 50%;
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.favourite::before {
-  content: "";
-  position: absolute;
-  width: 61px;
-  height: 61px;
-  top: 0;
-  left: 0;
-  background: url("../img/icon-favourite.png");
-
 }
 
 .price {
@@ -896,11 +864,6 @@ figure {
   border-radius: 50%;
 }
 
-/* по дизайну нет возможности выделить соц кнопки без бг, чтобы поменять его на ховер!
-.social-btn:hover {
-  background-color: #ffffff;
-}
- */
 
 .social-btn:active {
   box-shadow: 0 2px 2px #888888 inset;
@@ -918,10 +881,28 @@ figure {
 .social-btn-vk {
   background-image: url("../img/social-vk.png");
 }
+.social-btn-twitter:hover {
+  background-image: url("../img/social-twitter-hover.png");
+}
+
+.social-btn-inst:hover {
+  background-image: url("../img/social-inst-hover.png");
+}
+.social-btn-fb:hover {
+  background-image: url("../img/social-fb-hover.png");
+}
+.social-btn-vk:hover {
+  background-image: url("../img/social-vk-hover.png");
+}
+
 .additional-info {
   width: 44.4%;
   padding-top: 15px;
-
+}
+.additional-info span:hover,
+.additional-info span:active {
+  color: #ffbc9e;
+  text-decoration: underline;
 }
 .additional-info span {
   display: inline-block;
@@ -968,6 +949,12 @@ a.copyright {
   font-family: "Roboto", "Arial", sans-serif;
   text-decoration: underline;
 
+}
+
+a.copyright:hover,
+a.copyright:active {
+  color: #ffbc9e;
+  text-decoration: underline;
 }
 /*Catalog*/
 .breadcrumbs {
@@ -1154,9 +1141,15 @@ a.copyright {
   left: 15px;
   width: 20px;
   height: 20px;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   cursor:pointer;
+}
+.fat-choice input[type="radio"] + .radio-indicator:hover {
+  border: 2px solid #ffffff;
+}
+.fat-choice input[type="radio"] + .radio-indicator:disabled {
+  background-color: #b2c1b7;
 }
 .fat-choice input[type="radio"]:checked + .radio-indicator::after {
   content: "";
@@ -1220,6 +1213,12 @@ a.copyright {
   border-radius: 4px;
   cursor:pointer;
 }
+.addons-variety input[type="checkbox"] + .checkbox-indicator:hover {
+  border: 2px solid #ffffff;
+}
+.addons-variety input[type="checkbox"] + .checkbox-indicator:disabled {
+  border: 1px solid #b2c1b7;
+}
 .addons-variety input[type="checkbox"]:checked + .checkbox-indicator {
   content: "";
   top: 8px;
@@ -1277,6 +1276,18 @@ a.copyright {
   position: relative;
 }
 
+.favourite::before {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  top: 0;
+  left: 0;
+  background: url("../img/icon-favourite.png");
+}
+.catalog-item:hover {
+  z-index: 150;
+}
 .catalog-item-links {
   position: relative;
   z-index: 11;
@@ -1288,12 +1299,13 @@ a.copyright {
   left: -10px;
   right: -10px;
   bottom: -30px;
-  background: rgba(167,184,173,1);
+  background: rgba(167,184,173,0.3);
   transition: background-color 0.5s ease;
   border-radius: 5px;
   display: none;
   cursor: pointer;
   z-index: 10;
+  box-shadow: 0 20px 20px rgba(50,50,50,0.3);
 }
 .catalog-item:hover::before,
 .catalog-item:hover .catalog-item-button {
@@ -1379,4 +1391,51 @@ figure.item img{
   border-top: 2px solid #a9bbb1;
   padding-top: 17px;
   padding-bottom: 30px;
+}
+.cart-mini-view {
+  width: 540px;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  color: #323232;
+  border-radius: 5px;
+}
+table {
+  width: 510px;
+  height: 140px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+  position: relative;
+
+}
+.close-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.close-button::before,
+.close-button::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: #323232;
+  border-radius: 1px;
+  top: 25px;
+  left: 4px;
+}
+.close-button::before {
+  transform: rotate(45deg);
+}
+.close-button::after {
+  transform: rotate(-45deg);
 }

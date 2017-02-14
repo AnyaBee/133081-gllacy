@@ -38,7 +38,6 @@
               <a class="search" href="#"></a>
               <a class="login" href="#">Вход</a>
               <a class="cart-empty" href="#">Пусто</a>
-              <a class="cart-full" href="#">2 товара</a>
             </div>
             <div class="contact-details">
               <span>С 10 до 20, ежедневно<br></span>
@@ -95,46 +94,56 @@
           <!--Bestsellers section-->
 
           <section class="favourites">
-            <article class="favourite-item">
-              <a href="#">
-                <figure class="favourite">
-                  <img src="img/favourite-1.jpg" width="267" height="267" alt="ice-cream">
-                  <span class="label"></span>
-                  <span class="price">310<span class="ruble">&#99;</span>/кг</span>
-                  <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
-                </figure>
-              </a>
+            <div class="catalog-container">
+            <article class="catalog-item">
+              <div class="catalog-item-links">
+                <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
+                <a href="#">
+                  <figure class="item favourite">
+                    <img src="img/favourite-1.jpg" width="267" height="267" alt="ice-cream">
+                    <span class="price">310<span class="ruble">&#99;</span>/кг</span>
+                    <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
+                  </figure>
+                </a>
+              </div>
             </article>
-            <article class="favourite-item">
-              <a href="#">
-                <figure class="favourite">
-                  <img src="img/favourite-2.jpg" width="267" height="267" alt="ice-cream">
-                  <span class="label"></span>
-                  <span class="price">380<span class="ruble">&#99;</span>/кг</span>
-                  <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
-                </figure>
-              </a>
+            <article class="catalog-item">
+              <div class="catalog-item-links">
+                <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
+                <a href="#">
+                  <figure class="item favourite">
+                    <img src="img/favourite-2.jpg" width="267" height="267" alt="ice-cream">
+                    <span class="price">380<span class="ruble">&#99;</span>/кг</span>
+                    <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
+                  </figure>
+                </a>
+              </div>
             </article>
-            <article class="favourite-item">
-              <a href="#">
-                <figure class="favourite">
-                  <img src="img/favourite-3.jpg" width="267" height="267" alt="ice-cream">
-                  <span class="label"></span>
-                  <span class="price">355<span class="ruble">&#99;</span>/кг</span>
-                  <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
-                </figure>
-              </a>
+            <article class="catalog-item">
+              <div class="catalog-item-links">
+                <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
+                <a href="#">
+                  <figure class="item favourite">
+                    <img src="img/favourite-3.jpg" width="267" height="267" alt="ice-cream">
+                    <span class="price">355<span class="ruble">&#99;</span>/кг</span>
+                    <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
+                  </figure>
+                </a>
+              </div>
             </article>
-            <article class="favourite-item">
-              <a href="#">
-                <figure class="favourite">
-                  <img src="img/favourite-4.jpg" width="267" height="267" alt="ice-cream">
-                  <span class="label"></span>
-                  <span class="price">415<span class="ruble">&#99;</span>/кг</span>
-                  <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
-                </figure>
-              </a>
+            <article class="catalog-item">
+              <div class="catalog-item-links">
+                <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
+                <a href="#">
+                  <figure class="item favourite">
+                    <img src="img/favourite-4.jpg" width="267" height="267" alt="ice-cream">
+                    <span class="price">415<span class="ruble">&#99;</span>/кг</span>
+                    <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
+                  </figure>
+                </a>
+              </div>
             </article>
+            </div>
           </section>
           <section class="about-us">
             <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
@@ -220,7 +229,7 @@
         </section>
         <section class="footer-copyright">
           <a class="htmlacademy" href="#"><img src="img/logo-htmlacademy.png" width="108" height="38" alt="HTML Academy logo"></a>
-          <p>Сделано в <a class="copyright" href="https://htmlacademy.ru">HTML Academy &copy; </a>2017</p>
+          <p>Сделано в <a class="copyright" href="https://htmlacademy.ru">HTML Academy </a>&copy; 2017</p>
         </section>
       </footer>
         </div>
@@ -256,32 +265,7 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <input type="search" name="search" placeholder="Что ищем?">
         </form>
-      <!--Cart Block -->
 
-      <div class="cart-mini-view">
-        <table>
-          <tr>
-            <td><svg> width="" height=""</svg></td>
-            <td><img src="img/cart-item-1.jpg" width="33" height="33" alt="ice-cream-mini-view"></td>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 кг х 200 руб.</td>
-            <td>300 руб.</td>
-          </tr>
-          <tr>
-            <td><svg width="" height=""></svg></td>
-            <td><img src="img/cart-item-2.jpg" width="33" height="33" alt="ice-cream-mini-view"></td>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 кг х 300 руб.</td>
-            <td>450 руб.</td>
-          </tr>
-          <tfoot>
-            <tr>
-              <td colspan="4">Итого:750 руб.</td>
-            </tr>
-          </tfoot>
-        </table>
-        <a href="#">Оформить заказ</a>
-      </div>
       </div>
   </body>
 </html>
