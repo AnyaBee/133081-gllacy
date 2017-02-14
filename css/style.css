@@ -551,19 +551,26 @@ figure {
 .price {
   color: #ffffff;
   text-decoration: none;
-  font-size: 40px;
-  line-height: 46px;
+  font-size: 44px;
+  line-height: 50px;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: bold;
   content: "";
   position: absolute;
-  left: 0;
-  top: 216px;
+  left: 2px;
+  top: 210px;
+  letter-spacing: 1px;
 }
-
 .ruble {
   font: inherit;
   font-family: "als_rublregular", Arial, sans-serif;
+}
+.kg {
+  width: auto;
+  font-size: 28px;
+  line-height: 32px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: bold;
 }
 .favourite figcaption {
   margin: 0;
@@ -579,6 +586,7 @@ figure {
   border-radius: 15px;
   margin-bottom: 40px;
   padding: 25px 20px 0 20px;
+  margin-top: -35px;
 }
 .about-us h3 {
   margin: 0;
@@ -602,7 +610,7 @@ figure {
   font-size: 16px;
   line-height: 22px;
   color: #323232;
-  width: 42.6%;
+  width: 43.9%;
   display: block;
   padding-left: 55px;
   margin-bottom: 22px;/*подумать как быть с отступами, может флексами как-то?к*/
@@ -704,7 +712,7 @@ figure {
 
 }
 .newsletter-form label {
-  width: 65%;
+  width: 67%;
   float: left;
   position: relative;
   display: inline-block;
@@ -987,10 +995,10 @@ a.copyright:active {
   bottom: 0;
 }
 .breadcrumbs li::after {
-  content: ">>";
+  content:"\00bb";
   position: absolute;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
@@ -1038,20 +1046,73 @@ a.copyright:active {
 .sort-by {
   width: 194px;
   box-sizing: border-box;
-  margin-right: 15px;
+  margin-right: 10px;
 }
-.sort-by label {
-  margin-left: 20px;
+.sort-by p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  margin-left: 18px;
   font-size: 14px;
   line-height: 16px;
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-weight: normal;
+  padding-top: 2px;
+}
+
+.sort-by select {
+  min-width: 193px;
+  background-color: #aabcb2;
+  border-radius: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  border: none;
+  color: #ffffff;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.sort-by select:hover {
+  color: #323232;
+  background-color: #ffffff;
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+.custom-select::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 45%;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ffffff;
+}
+.custom-select:hover::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 45%;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #333333;
 }
 .fat-content-choice {
   font-size: 14px;
   line-height: 16px;
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-weight: normal;
+  padding-top: 2px;
+  padding-left: 17px;
 }
 .range {
   width: 218px;
@@ -1060,6 +1121,8 @@ a.copyright:active {
 
 .range p {
   margin: 0;
+  padding-top: 2px;
+  padding-left: 15px;
   font-size: 14px;
   line-height: 16px;
   font-family: "Roboto Medium", "Arial", sans-serif;
@@ -1080,9 +1143,11 @@ a.copyright:active {
   background: #d1dad3;
 }
 .range-controls .bar {
-  width: 70%;
+  width: 45%;
   height: 4px;
   background: #f8f7f4;
+  position: absolute;
+  left: 35px;
 }
 .range-controls .toggle {
   position: absolute;
@@ -1099,19 +1164,15 @@ a.copyright:active {
 
 .range-controls .toggle-left {
   top: 8px;
-  left: 10px;
+  left: 35px;
 }
-.range-controls .toggle-left:hover {
-  top: 7px;
-  left: 9px;
-}
+
 .range-controls .toggle-right {
   top: 7px;
-  left: 139px;
+  left: 132px;
 }
-/*как сделать так, чтобы блок с фильтром жирность не падал на новую строчку? Он падает, когда ширина меньше 900 px, но я не знаю как остановить!*/
 .wrapper-fat {
-  width: 416px;
+  width: 417px;
   box-sizing:border-box;
 }
 
@@ -1128,7 +1189,7 @@ a.copyright:active {
   height: 20px;
   padding-top: 8px;
   padding-bottom:8px;
-  padding-left: 15px;
+  padding-left: 17px;
   position: relative;
 }
 
@@ -1180,11 +1241,14 @@ a.copyright:active {
   line-height: 16px;
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-weight: normal;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  padding-left: 15px;
 }
 .additional{
   background-color: #aabcb2;
   border-radius: 15px;
+
+  box-sizing: border-box;
 }
 .addons-variety {
   display: inline-block;
@@ -1198,7 +1262,7 @@ a.copyright:active {
   position: relative;
 }
 .addons-variety:last-of-type {
-  padding-right: 30px;
+  padding-right: 23px;
 }
 .addons-variety input[type="checkbox"] {
   display: none;
@@ -1231,13 +1295,12 @@ a.copyright:active {
 
 }
 .add {
-  padding-left:23px;
+  padding-left:25px;
 }
 
 .submit {
-  padding-top: 25px;
-  margin-left: 15px;
-  width: 140px;
+  padding-top: 20px;
+  margin-left: 10px;
 }
 .submit input[type="submit"] {
   margin: 0;
@@ -1247,8 +1310,8 @@ a.copyright:active {
   background-color: #a6b7ad;
   box-sizing: border-box;
   border: 2px solid #ffffff;
-  border-radius: 15px;
-  padding: 8px 30px 8px 30px;
+  border-radius: 18px;
+  padding: 8px 27px 8px 30px;
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -1274,6 +1337,7 @@ a.copyright:active {
   width: 23.3%;
   margin-right: 2.2%;
   position: relative;
+  margin-bottom: 33px;
 }
 
 .favourite::before {
@@ -1285,6 +1349,7 @@ a.copyright:active {
   left: 0;
   background: url("../img/icon-favourite.png");
 }
+
 .catalog-item:hover {
   z-index: 150;
 }
@@ -1298,8 +1363,8 @@ a.copyright:active {
   top: -10px;
   left: -10px;
   right: -10px;
-  bottom: -30px;
-  background: rgba(167,184,173,0.3);
+  bottom: -65px;
+  background: rgba(248,247,244,0.3);
   transition: background-color 0.5s ease;
   border-radius: 5px;
   display: none;
@@ -1333,8 +1398,9 @@ figure.item img{
   color: #ffffff;
   text-decoration: underline;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   position: relative;
+  padding-top: 10px;
 }
 
 .pagination-wrapper {
@@ -1379,8 +1445,7 @@ figure.item img{
 }
 .next {
   background: url("../img/icon-next.png") no-repeat;
-  background-position: center
-
+  background-position: center;
 }
 .prev:hover,
 .next:hover {
