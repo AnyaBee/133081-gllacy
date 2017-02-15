@@ -178,26 +178,7 @@
           </div>
 
             <!-- Map -->
-          <!--
-            <section class="location">
-              <div class="map-holder">
-                <img src="img/map-placeholder.jpg" width="1200" height="430" alt="Main office location">
-                <div class="pin">
-                  <img src="img/map-pin.png" width="80" height="140" alt="pin">
-                </div>
-                <div class="address">
-                  <div class="address-wrapper">
-                  <span>Адрес главного офиса <br>и офлайн магазина:</span>
-                  <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
-                  <span>Для заказов по телефону:</span>
-                  <a class="phone" href="tel:88124502525">8 812 450-25-25</a>
-                  <span class="hours">(с 10 до 20 ежедневно)</span>
-                  <a class="button" href="#">Форма обратной связи</a>
-                </div>
-                </div>
-              </div>
-            </section>
-        -->
+
         </main>
         </div>
           <div class="iframe-wrapper">
@@ -236,27 +217,33 @@
         <!--Popup - appears on click on "Форма обратной связи" button on map-->
 
       <div class="popup">
-        <h5>Мы обязательно вам ответим!</h5>
+        <h4>Мы обязательно вам ответим!</h4>
         <form action="https://echo.htmlacademy.ru" method="get">
           <label><input type="text" name="name" value="Как вас зовут?" required></label>
           <label><input type="email" name="email" value="Ваша почта для ответа?" required></label>
           <label><textarea name="user-text" placeholder="Напишите что-нибудь..."></textarea></label>
           <input type="submit" value="Отправить">
         </form>
+        <button class="popup-content-close" type="button" title="Закрыть">Закрыть</button>
       </div>
         <!--Appears on hover/click on "Вход" button in header-->
 
       <div class="login-block">
         <form action="https://echo.htmlacademy.ru" method="get">
           <label>
-            <input type="email" name="email" value="Электронная почта" required>
+            <input type="email" name="email" placeholder="Электронная почта" required>
+            <span>Как вас зовут?</span>
           </label>
           <label>
             <input type="text" name="password" placeholder="Пароль" required>
           </label>
-          <input type="submit" value="Войти">
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
+          <div class="login-wrapper clearfix">
+            <a href="#" class="button login-button" type="submit">Войти</a>
+            <div class="login-help">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+          </div>
         </form>
       </div>
         <!--Search block-->
