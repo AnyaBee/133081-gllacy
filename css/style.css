@@ -330,6 +330,7 @@ a.cart-full::before {
   background: url("../img/icon-cart-full.png") no-repeat;
 
 }
+
 a.phone {
   color: #ffffff;
   font-size: 22px;
@@ -1482,23 +1483,25 @@ padding-bottom: 30px;
   justify-content: space-between;
 }
 .cart-mini-view {
-width: 540px;
-box-sizing: border-box;
-padding: 20px 15px;
-background-color: #f8f7f4;
-color: #323232;
-border-radius: 5px;
+  width: 540px;
+  box-sizing: border-box;
+  padding: 24px 15px 20px 15px;
+  background-color: #f8f7f4;
+  color: #323232;
+  border-radius: 5px;
+  position: absolute;
 }
-table {
+.table-cart {
 width: 510px;
-height: 140px;
 font-family: "Roboto", "Arial", sans-serif;
 font-size: 13px;
 line-height: 16px;
 font-weight: normal;
-position: relative;
-
 }
+.table-cart tr {
+  position: relative;
+}
+
 .close-button {
 position: absolute;
 top: 0;
@@ -1509,6 +1512,7 @@ font-size: 0;
 background-color: transparent;
 border: 0;
 cursor: pointer;
+
 }
 
 .close-button::before,
@@ -1519,12 +1523,40 @@ width: 14px;
 height: 2px;
 background-color: #323232;
 border-radius: 1px;
-top: 25px;
-left: 4px;
+top: 8px;
+left: 0px;
 }
 .close-button::before {
 transform: rotate(45deg);
 }
 .close-button::after {
 transform: rotate(-45deg);
+}
+.sum {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: end;
+  width:100%;
+  border-top: 1px solid #cacac7;
+}
+.table-cart td {
+  vertical-align: top;
+}
+
+.table-cart td>img {
+  margin-top:-8px;
+}
+
+.cart-button {
+  float: right;
+  padding: 10px 12px;
+}
+
+.table-cart th, td {
+  height: 48px;
 }

@@ -339,8 +339,8 @@
 </div>
 <!--Cart Block -->
 
-<div class="cart-mini-view">
-  <table>
+<div class="cart-mini-view clearfix">
+  <table class="table-cart">
     <tr>
       <td class="close-button" style="width: 5%"></td>
       <td  style="width: 8%"><img src="img/cart-item-1.png" width="33" height="33" alt="ice-cream-mini-view"></td>
@@ -355,13 +355,16 @@
       <td>1,5 кг х 300 руб.</td>
       <td>450 руб.</td>
     </tr>
-    <tfoot>
+  </table>
+    <!--
+    <tfoot class="footer-cart">
     <tr>
-      <td colspan="4">Итого:750 руб.</td>
+      <td class="sum" colspan="5">Итого:750 руб.</td>
     </tr>
     </tfoot>
-  </table>
-  <a href="#">Оформить заказ</a>
+  -->
+  <span class="sum">Итого:750 руб.</span>
+  <a class="button cart-button" href="#">Оформить заказ</a>
 </div>
 <!--Cart Block ends -->
 </body>
