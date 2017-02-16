@@ -3,6 +3,7 @@
   src: url("../fonts/rouble-webfont.woff2") format("woff2"),
   url("../fonts/rouble-webfont.woff") format("woff");
 }
+
 body {
   min-width: 900px;
   font-size: 16px;
@@ -12,16 +13,20 @@ body {
   color: #ffffff;
   background: #849d8f;
 }
+
 body > input[type="radio"] {
   display: none;
 }
+
 .iframe-wrapper {
   position: relative;
 }
+
 iframe {
   width: 100%;
   height: 430px;
 }
+
 .wrapper {
   margin: 0 auto;
   box-sizing: border-box;
@@ -30,7 +35,6 @@ iframe {
 }
 
 /* Псевдоэлементы с изображениями нужны только для предзагрузки картинок, чтобы они уже были в кеше в момент переключения слайдов и сразу отображались */
-
 .wrapper::before,
 .wrapper::after {
   content: "";
@@ -44,7 +48,7 @@ iframe {
 .wrapper::after {
   background: #9d8b84 url("../img/banner-3.png") center top no-repeat;
 }
-/*Нужен ли мне этот блок вообще?*/
+
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -75,9 +79,9 @@ h2 {
   padding-left: 2.3%;
 }
 .clearfix::after{
-  display:block;
-  clear:both;
-  content:'';
+  display: block;
+  clear: both;
+  content: '';
 }
 
 .logo {
@@ -104,7 +108,7 @@ h2 {
   display: flex;
   justify-content: flex-end;
   align-self: center;
-  margin-top: 22px; /*можно так делать верхним марджином? иначе не знаю как выровнять*/
+  margin-top: 22px;
 }
 
 .nav {
@@ -130,6 +134,7 @@ h2 {
   line-height: 18px;
   padding-top: 13px;
 }
+
 .main-navigation > a {
   display: block;
   color: #ffffff;
@@ -143,27 +148,34 @@ h2 {
   border-radius: 14px;
   text-decoration: none;
 }
+
 .main-navigation > a:active {
   box-shadow: 0 2px 2px #888888 inset;
 }
+
 .main-navigation > a.active {
   background-color: #d07058;
   color: #ffffff;
   border-radius: 14px;
 }
+
 .navigation-level-two {
   display: none;
 }
+
 .nav li:hover {
   padding-bottom: 8px;
   margin-bottom: -8px;
 }
+
 .nav li:hover > .navigation-level-two {
   display: block;
 }
+
 .main-navigation > a:hover .navigation-level-two {
   display: block;
 }
+
 .main-navigation > a::after {
   position: absolute;
   content: "";
@@ -177,7 +189,7 @@ h2 {
 .main-navigation > a:hover::after,
 .main-navigation > a:active::after,
 .main-navigation > a.active::after {
-  display:none;
+  display: none;
 }
 
 .navigation-level-two {
@@ -226,12 +238,15 @@ h2 {
 .navigation-level-two a:hover {
   background-color: #fbded7;
 }
+
 .navigation-level-two a:active {
   background-color: #f6b5a5;
 }
+
 .navigation-level-two a.active {
   background-color: #d07058;
 }
+
 a.search {
   width: 32px;
   height: 32px;
@@ -239,14 +254,13 @@ a.search {
   color: #ffffff;
   background: #acc3b6 url("../img/icon-search.png") center no-repeat;
   border-radius: 50%;
-
 }
+
 a.search:hover {
   background: #f8f7f4 url("../img/icon-search-hover.png") center no-repeat;
-
 }
 
-a.login{
+a.login {
   display: block;
   position: relative;
   padding: 8px 15px 8px 45px;
@@ -263,7 +277,7 @@ a.login{
 
 a.login::before {
   position: absolute;
-  content:"";
+  content: "";
   width:21px;
   height: 19px;
   top: 6px;
@@ -304,9 +318,11 @@ a.cart-empty:hover {
   color: #323232;
   background-color: #f7f6f3;
 }
+
 a.cart-empty:hover::before {
   background: url("../img/icon-cart-full.png") no-repeat;
 }
+
 a.cart-full {
   display: block;
   position: relative;
@@ -328,7 +344,6 @@ a.cart-full::before {
   top: 6px;
   left: 16px;
   background: url("../img/icon-cart-full.png") no-repeat;
-
 }
 
 a.phone {
@@ -371,6 +386,7 @@ a.phone {
   font-size: 60px;
   line-height: 60px;
 }
+
 .slide-btn {
   margin-bottom: 40px;
   display: inline-block;
@@ -390,6 +406,7 @@ a.phone {
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
+
 .slide-btn:hover {
   background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -423,9 +440,11 @@ a.phone {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .slide {
   display: none;
 }
+
 #btn-1:checked ~ .wrapper #slide1,
 #btn-2:checked ~ .wrapper #slide2,
 #btn-3:checked ~ .wrapper #slide3 {
@@ -449,6 +468,7 @@ a.phone {
 #btn-3:checked ~ .wrapper label[for="btn-3"] {
   background-color: #ffffff;
 }
+
 #btn-1 ~ .wrapper label[for="btn-1"]:hover,
 #btn-2 ~ .wrapper label[for="btn-2"]:hover,
 #btn-3 ~ .wrapper label[for="btn-3"]:hover {
@@ -485,6 +505,7 @@ a.phone {
   background-size: cover;
   background-position: 50% 50%;
 }
+
 .promo-jam h2,
 .promo-chocolate h2 {
   margin-bottom: 17px;
@@ -502,17 +523,19 @@ a.phone {
 .promo-chocolate p:last-of-type {
   margin-bottom: 90px;
 }
+
 .promo-block:nth-of-type(even) {
   margin-right: 0;
 }
+
 .promo-jam .button,
 .promo-chocolate .button {
   position: absolute;
   bottom: 20px;
   right: 20px;
   display: inline-block;
-
 }
+
 .button {
   padding: 12px 22px;
   font-weight: bold;
@@ -562,10 +585,12 @@ figure {
   top: 210px;
   letter-spacing: 1px;
 }
+
 .ruble {
   font: inherit;
   font-family: "als_rublregular", Arial, sans-serif;
 }
+
 .kg {
   width: auto;
   font-size: 28px;
@@ -573,6 +598,7 @@ figure {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: bold;
 }
+
 .favourite figcaption {
   margin: 0;
   text-align: center;
@@ -582,6 +608,7 @@ figure {
   line-height: 22px;
   font-family: "Roboto Medium", Arial, sans-serif;
 }
+
 .about-us {
   background: url("../img/bg-about-us.jpg");
   border-radius: 15px;
@@ -589,6 +616,7 @@ figure {
   padding: 25px 20px 0 20px;
   margin-top: -35px;
 }
+
 .about-us h3 {
   margin: 0;
   font-family: "Roboto Medium", Arial, sans-serif;
@@ -616,9 +644,11 @@ figure {
   padding-left: 55px;
   margin-bottom: 22px;/*подумать как быть с отступами, может флексами как-то?к*/
 }
+
 .special {
   position: relative;
 }
+
 .about-1::before {
   content: "";
   position: absolute;
@@ -638,6 +668,7 @@ figure {
   height: 49px;
   background: url("../img/icon-cow.png");
 }
+
 .about-3::before {
   content: "";
   position: absolute;
@@ -647,6 +678,7 @@ figure {
   height: 49px;
   background: url("../img/icon-leaf.png");
 }
+
 .about-4::before {
   content: "";
   position: absolute;
@@ -656,6 +688,7 @@ figure {
   height: 49px;
   background: url("../img/icon-thermometer.png");
 }
+
 .blog-newsletter {
   display: flex;
   justify-content: space-between;
@@ -672,6 +705,7 @@ figure {
   background-size: cover;
   background-position: 100%;
 }
+
 .blog-new span {
   display: block;
   font-family: "Roboto Medium", "Arial", sans-serif;
@@ -686,14 +720,15 @@ figure {
   line-height: 30px;
   color: #323232;
 }
+
 .newsletter-wrapper {
   width: 48.8%;
   background: #ffffff url("../img/newsletter-pattern.png");
-  /* background: #f8f7f4 5px 5px/540px 210px; как же все-таки сделать серый бг поверх имеющегося паттерна? */
   border-radius: 15px;
   box-sizing: border-box;
   padding: 5px;
 }
+
 .newsletter {
   background-color: #f8f7f4;
   border-radius: 15px;
@@ -710,14 +745,15 @@ figure {
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 35px;
-
 }
+
 .newsletter-form label {
   width: 67%;
   float: left;
   position: relative;
   display: inline-block;
 }
+
 .newsletter-form input {
   margin: 0;
   display: block;
@@ -733,7 +769,7 @@ figure {
   font-weight: normal;
 }
 .newsletter-form .button {
-  border: none; /*откуда у меня взялся бордер? разве он мог просто прийти из инпута выше???*/
+  border: none;
   float: right;
   font-size: 18px;
   line-height: 24px;
@@ -765,15 +801,19 @@ figure {
 .newsletter-form input[type="email"] + span {
   display: none;
 }
+
 .newsletter-form input:focus:-moz-placeholder {
   font-weight: normal;
 }
+
 .newsletter-form input:focus::-webkit-input-placeholder {
   font-weight: normal;
 }
+
 .newsletter-form input:focus::-moz-placeholder {
   font-weight: normal;
 }
+
 .newsletter-form input:focus:-ms-input-placeholder {
   font-weight: normal;
 }
@@ -805,17 +845,19 @@ figure {
   right: 2.3%;
   transform: translate(2.3%, 0);
   width: 303px;
-
   background-color: #ffffff;
   border-radius: 15px;
   color: #323232;
 }
+
 .address-wrapper {
   padding: 25px;
 }
+
 .address a {
   display: block;
 }
+
 .address span {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
@@ -823,6 +865,7 @@ figure {
   font-weight: normal;
   margin-bottom: 10px;
 }
+
 .address strong {
   display: block;
   font-family: "Roboto", "Arial", sans-serif;
@@ -831,6 +874,7 @@ figure {
   font-weight: bold;
   margin-bottom: 25px;
 }
+
 .address .phone {
   color: #323232;
   font-family: "Roboto", "Arial", sans-serif;
@@ -838,10 +882,12 @@ figure {
   line-height: 24px;
   font-weight: bold;
 }
+
 .address .hours {
   display: block;
   margin-bottom: 25px;
 }
+
 .pin img {
   width: 80px;
   display: block;
@@ -863,6 +909,7 @@ figure {
   margin-right: 135px;
   padding-top: 18px;
 }
+
 .social-btn {
   display: inline-block;
   width: 32px;
@@ -872,10 +919,10 @@ figure {
   border-radius: 50%;
 }
 
-
 .social-btn:active {
   box-shadow: 0 2px 2px #888888 inset;
 }
+
 .social-btn-twitter {
   background-image: url("../img/social-twitter.png");
 }
@@ -883,12 +930,15 @@ figure {
 .social-btn-inst {
   background-image: url("../img/social-inst.png");
 }
+
 .social-btn-fb {
   background-image: url("../img/social-fb.png");
 }
+
 .social-btn-vk {
   background-image: url("../img/social-vk.png");
 }
+
 .social-btn-twitter:hover {
   background-image: url("../img/social-twitter-hover.png");
 }
@@ -896,9 +946,11 @@ figure {
 .social-btn-inst:hover {
   background-image: url("../img/social-inst-hover.png");
 }
+
 .social-btn-fb:hover {
   background-image: url("../img/social-fb-hover.png");
 }
+
 .social-btn-vk:hover {
   background-image: url("../img/social-vk-hover.png");
 }
@@ -907,14 +959,16 @@ figure {
   width: 44.4%;
   padding-top: 15px;
 }
+
 .additional-info span:hover,
 .additional-info span:active {
   color: #ffbc9e;
   text-decoration: underline;
 }
+
 .additional-info span {
   display: inline-block;
-  width: 135px; /*по дизайну не встает, но считаю багом дизайна, так как сделала ширину максимально большого элемента в дизайне, который на одной строке*/
+  width: 135px;
   color: #ffffff;
   font-size: 13px;
   line-height: 18px;
@@ -923,16 +977,20 @@ figure {
   text-decoration: underline;
   margin-right: -30px;
 }
+
 .additional-info span:last-of-type {
   width: 170px;
 }
+
 .additional-info a:first-of-type span {
   font-weight: bold;
   position: relative;
 }
+
 .additional-info a:nth-of-type(even) {
   margin-right: 90px;
 }
+
 .additional-info a:first-of-type span::before {
   content: "";
   position: absolute;
@@ -942,9 +1000,11 @@ figure {
   top: 2px;
   left: -21px;
 }
+
 .footer-copyright a {
   margin: 0;
 }
+
 .footer-copyright p {
   margin: 0;
   color: #ffffff;
@@ -953,6 +1013,7 @@ figure {
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
 }
+
 a.copyright {
   color: #ffffff;
   font-size: 12px;
