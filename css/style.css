@@ -1566,6 +1566,7 @@ font-weight: normal;
 }
 .first-column {
   width: 5%;
+  position: relative;
 }
 .second-column {
   width: 8%;
@@ -1580,8 +1581,11 @@ font-weight: normal;
   width: 13%;
 }
 .close-button {
+  width: 10px;
+  height: 10px;
   border: 0;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .close-button::before,
