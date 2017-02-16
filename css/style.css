@@ -1552,6 +1552,7 @@ padding-bottom: 30px;
   color: #323232;
   border-radius: 5px;
   position: absolute;
+  display: none;
 }
 .table-cart {
 width: 510px;
@@ -1641,6 +1642,7 @@ transform: rotate(-45deg);
   background-color: #f8f7f4;
   padding: 20px;
   position: relative;
+  display: none;
 }
 .login-block input {
   margin: 0;
@@ -1743,7 +1745,9 @@ transform: rotate(-45deg);
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 30;
   background-color: rgba(0, 0, 0, 0.3);
+  display: none;
 }
 .popup {
   width: 480px;
@@ -1914,6 +1918,7 @@ transform: rotate(-45deg);
   color: #323232;
   padding: 20px 15px 20px 15px;
   box-sizing: border-box;
+  display: none;
 }
 .search-block input {
   margin: 0;
