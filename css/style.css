@@ -33,6 +33,7 @@ iframe {
   margin: 0 auto;
   box-sizing: border-box;
   background: #849d8f url("../img/banner-1.png") center top no-repeat;
+  -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -107,8 +108,13 @@ h2 {
   position: relative;
   width: 31%;
   margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -ms-flex-item-align: center;
   align-self: center;
   margin-top: 22px;
 }
@@ -402,7 +408,6 @@ a.phone {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
   background: #f26843;
-  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
@@ -410,14 +415,12 @@ a.phone {
 }
 
 .slide-btn:hover {
-  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slide-btn:active {
-  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -477,8 +480,12 @@ a.phone {
   background-color: #b5c3ba;
 }
 .promo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -497,6 +504,7 @@ a.phone {
 
 .promo-chocolate {
   position: relative;
+  -ms-flex-preferred-size: 48.8%;
   flex-basis: 48.8%;
   box-sizing: border-box;
   background: #6c4c41 url("../img/chocolate-bg.jpg") no-repeat;
@@ -549,21 +557,18 @@ a.phone {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
   background: #f26843;
-  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 .button:hover {
-  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
-  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -630,9 +635,15 @@ figure {
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
   align-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -692,7 +703,11 @@ figure {
 }
 
 .blog-newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 40px;
 }
@@ -845,6 +860,7 @@ figure {
   position: absolute;
   top: 65px;
   right: 2.3%;
+  -webkit-transform: translate(2.3%, 0);
   transform: translate(2.3%, 0);
   width: 303px;
   background-color: #ffffff;
@@ -902,7 +918,11 @@ figure {
 .main-footer {
   padding-left: 2.3%;
   padding-right: 2.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1033,7 +1053,11 @@ a.copyright:active {
 
 .breadcrumbs {
   max-width: 44.4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 0;
   margin: 0;
@@ -1417,8 +1441,8 @@ a.copyright:active {
   cursor: pointer;
 }
 .submit input[type="submit"]:hover {
-background-color: #fbfcfb;
-color: #323232;
+  background-color: #fbfcfb;
+  color: #323232;
 }
 
 .submit input[type="submit"]:active {
@@ -1427,9 +1451,14 @@ color: #323232;
 }
 
 .catalog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 30px;
 }
@@ -1468,6 +1497,7 @@ color: #323232;
   right: -10px;
   bottom: -65px;
   background: rgba(248,247,244,0.3);
+  -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
   border-radius: 5px;
   display: none;
@@ -1513,7 +1543,11 @@ figure.item img{
 }
 
 .pagination-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   margin-bottom: 30px;
 }
@@ -1577,7 +1611,11 @@ figure.item img{
   padding-bottom: 30px;
   padding-left: 2.3%;
   padding-right: 2.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1646,10 +1684,12 @@ figure.item img{
 }
 
 .close-button::before {
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .close-button::after {
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -1977,10 +2017,12 @@ figure.item img{
 }
 
 .popup-content-close::before {
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .popup-content-close::after {
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
