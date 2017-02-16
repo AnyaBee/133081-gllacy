@@ -20,7 +20,7 @@ body > input[type="radio"] {
 }
 iframe {
   width: 100%;
-  margin-bottom: 12px;
+  height: 430px;
 }
 .wrapper {
   margin: 0 auto;
