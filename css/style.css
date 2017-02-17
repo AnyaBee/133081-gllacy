@@ -124,8 +124,8 @@ h2 {
   margin: 0;
   padding: 0;
   margin-left: 12px;
-
 }
+
 .main-nav {
   position: relative;
   display: inline-block;
@@ -223,6 +223,7 @@ h2 {
   text-align: left;
   padding: 8px 10px 8px 20px;
 }
+
 .navigation-level-two .new-items {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -230,6 +231,7 @@ h2 {
   color: #323232;
   font-weight: bold;
 }
+
 .navigation-level-two .new-items::after {
   content: "";
   position: absolute;
@@ -292,6 +294,7 @@ a.login::before {
   left: 16px;
   background: url("../img/icon-login.png") no-repeat;
 }
+
 a.login:hover {
   color: #323232;
   background-color: #f7f6f3;
@@ -300,6 +303,7 @@ a.login:hover {
 a.login:hover::before {
   background: url("../img/icon-login-hover.png") no-repeat;
 }
+
 a.cart-empty {
   position: relative;
   padding: 8px 35px 8px 45px;
@@ -386,6 +390,7 @@ a.phone {
   text-align: center;
   color: #ffffff;
 }
+
 .slide-title {
   width: 700px;
   margin: 0 auto;
@@ -406,7 +411,6 @@ a.phone {
   color: #ffffff;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
@@ -479,6 +483,7 @@ a.phone {
 #btn-3 ~ .wrapper label[for="btn-3"]:hover {
   background-color: #b5c3ba;
 }
+
 .promo-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,13 +560,13 @@ a.phone {
   color: #ffffff;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
+
 .button:hover {
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
@@ -574,7 +579,6 @@ a.phone {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-/*why did I have to do that?? something with normalise...*/
 figure {
   margin: 0 0;
 }
@@ -785,6 +789,7 @@ figure {
   line-height: 24px;
   font-weight: normal;
 }
+
 .newsletter-form .button {
   border: none;
   float: right;
@@ -1212,6 +1217,7 @@ a.copyright:active {
   border-right: 5px solid transparent;
   border-top: 5px solid #333333;
 }
+
 .fat-content-choice {
   font-size: 14px;
   line-height: 16px;
@@ -1283,6 +1289,7 @@ a.copyright:active {
   top: 7px;
   left: 132px;
 }
+
 .wrapper-fat {
   width: 417px;
   box-sizing:border-box;
@@ -1296,6 +1303,7 @@ a.copyright:active {
   background-color: #aabcb2;
   border-radius: 15px;
 }
+
 .fat-choice {
   display: inline-block;
   height: 20px;
@@ -1440,6 +1448,7 @@ a.copyright:active {
   line-height: 18px;
   cursor: pointer;
 }
+
 .submit input[type="submit"]:hover {
   background-color: #fbfcfb;
   color: #323232;
@@ -1522,7 +1531,7 @@ a.copyright:active {
   margin-right: 0;
 }
 
-figure.item img{
+figure.item img {
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -1754,6 +1763,7 @@ figure.item img{
 .login-block input:hover {
   box-shadow: 0 0 0 1px #c7c6c5;
 }
+
 .login-block input:focus{
   border: 1px solid #8fbdec;
   font-family: "Roboto", "Arial", sans-serif;
@@ -1762,6 +1772,7 @@ figure.item img{
   font-weight: bold;
   color: #323232;
 }
+
 .login-button {
   padding: 10px 25px;
   border: 0;
@@ -1874,6 +1885,7 @@ figure.item img{
 .form-wrapper {
   position: relative;
 }
+
 .popup input {
   margin: 0;
   padding:0;
