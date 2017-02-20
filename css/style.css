@@ -81,6 +81,7 @@ h2 {
   padding-right: 2.3%;
   padding-left: 2.3%;
 }
+
 .clearfix::after{
   display: block;
   clear: both;
@@ -92,6 +93,7 @@ h2 {
   width: 154px;
   float: left;
 }
+
 .main-content {
   padding-right: 2.3%;
   padding-left: 2.3%;
@@ -230,6 +232,7 @@ h2 {
   position: relative;
   color: #323232;
   font-weight: bold;
+  border-radius: 4px;
 }
 
 .navigation-level-two .new-items::after {
@@ -403,6 +406,7 @@ a.login:hover::before {
 .login-button {
   padding: 10px 25px;
   border: 0;
+  cursor: pointer;
 }
 
 .login-wrapper a {
@@ -474,11 +478,13 @@ a.login:hover::before {
   top: 65px;
   left:35px;
 }
+
 .login-popup {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
+
 .login-popup:hover .login-block {
   display: block;
 }
@@ -700,7 +706,6 @@ a.phone {
   padding: 18px;
   background-size: cover;
   background-position: 50% 50%;
-  align-self: flex-start;
 }
 
 .promo-jam h2,
