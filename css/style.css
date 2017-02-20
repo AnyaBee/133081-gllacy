@@ -132,6 +132,7 @@ h2 {
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
+  vertical-align: top;
 }
 
 .nav > li {
@@ -318,6 +319,7 @@ a.search:hover {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
+  vertical-align: top;
 }
 
 .popup-search:hover .search-block {
@@ -482,6 +484,7 @@ a.login:hover::before {
 .login-popup {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding-bottom: 20px;
 }
 
@@ -510,15 +513,6 @@ a.cart-empty::before {
   top: 6px;
   left: 16px;
   background: url("../img/icon-cart.png") no-repeat;
-}
-
-a.cart-empty:hover {
-  color: #323232;
-  background-color: #f7f6f3;
-}
-
-a.cart-empty:hover::before {
-  background: url("../img/icon-cart-full.png") no-repeat;
 }
 
 a.cart-full {
@@ -706,6 +700,7 @@ a.phone {
   padding: 18px;
   background-size: cover;
   background-position: 50% 50%;
+  align-self: flex-start;
 }
 
 .promo-jam h2,
@@ -735,7 +730,6 @@ a.phone {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  display: inline-block;
 }
 
 .button {
@@ -808,7 +802,7 @@ figure {
 }
 
 .about-us {
-  background: url("../img/bg-about-us.jpg");
+  background: #f0e6cc url("../img/bg-about-us.jpg");
   border-radius: 15px;
   margin-bottom: 40px;
   padding: 25px 20px 0 20px;
@@ -905,7 +899,7 @@ figure {
 
 .blog-new {
   width: 48.8%;
-  background: url("../img/strawberry-bg.jpg") no-repeat;
+  background: #ffffff url("../img/strawberry-bg.jpg") no-repeat;
   border-radius: 15px;
   padding: 24px 20px;
   box-sizing: border-box;
@@ -960,6 +954,7 @@ figure {
   float: left;
   position: relative;
   display: inline-block;
+  vertical-align: top;
 }
 
 .newsletter-form input {
@@ -1126,6 +1121,7 @@ figure {
 
 .social-btn {
   display: inline-block;
+  vertical-align: top;
   width: 32px;
   height: 32px;
   margin-right: 8px;
@@ -1182,6 +1178,7 @@ figure {
 
 .additional-info span {
   display: inline-block;
+  vertical-align: top;
   width: 135px;
   color: #ffffff;
   font-size: 13px;
@@ -1297,6 +1294,7 @@ a.copyright:active {
 
 .breadcrumbs a {
   display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
@@ -1377,6 +1375,7 @@ a.copyright:active {
 .custom-select {
   position: relative;
   display: inline-block;
+  vertical-align: top;
 }
 
 .custom-select::after {
@@ -1493,6 +1492,7 @@ a.copyright:active {
 
 .fat-choice {
   display: inline-block;
+  vertical-align: top;
   height: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1566,6 +1566,7 @@ a.copyright:active {
 
 .addons-variety {
   display: inline-block;
+  vertical-align: top;
   height: 20px;
   padding: 8px 5px 8px 20px;
   background-color: #aabcb2;
